@@ -259,17 +259,17 @@ nav ul li ul li a:hover {
 }
 
 .image-operators {
-  height: 150vh;
-  margin: -20px 0 -75px 0;
+  height: 100vh;
+  margin: -40px 0 0 0;
 }
 
 #wamai {
-  height: 80vh;
-  margin: 80px 40px -75px 100px;
+  height: 80vh !important;
+  margin: 70px 40px -75px 70px;
 }
 .image-container {
   height: 80vh;
-  margin: 0 14vw;
+  margin: 0 15vw;
   overflow: hidden;
 }
 .image-list {
