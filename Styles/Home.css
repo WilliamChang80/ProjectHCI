@@ -81,54 +81,6 @@ body {
   flex-direction: column;
 }
 
-.content-title {
-  font-size: 3rem;
-  color: rgb(124, 27, 27);
-  text-align: center;
-}
-
-.content-desc {
-  margin: 0 22% 0 22%;
-  text-align: center;
-}
-
-.content-line {
-  background-color: rgb(124, 27, 27);
-  width: 15%;
-}
-
-.content-title-second {
-  margin: 0;
-  font-size: 2rem;
-  color: rgb(124, 27, 27);
-  text-align: center;
-}
-
-.content-container {
-  margin-top: 5%;
-  margin-bottom: 3%;
-}
-
-.text-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-left: 15%;
-  margin-right: 15%;
-  margin-bottom: 5%;
-}
-
-.item-container {
-  margin: 0 10% 0 0;
-  width: 50%;
-}
-
-.item-container > img {
-  height: 100%;
-  width: 90%;
-  margin: 5% 5% 5% 5%;
-}
-
 .nav-top {
   background-color: darkslategray;
   display: flex;
@@ -214,6 +166,131 @@ nav ul li ul li a:hover {
 
 .session1 {
   overflow: hidden;
-  background-image: url("../Assets/Session1.jpg");
+  background-image: url("../Assets/Session1.png");
+  height: 90vh;
+}
+
+.carousel {
+  width: 1200px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+}
+
+.slick-slide {
+  text-align: center;
+  color: #373737;
+  background: white;
+}
+
+#next {
+  color: white;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 5% 2%;
+}
+
+#prev {
+  color: white;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 5% 2%;
+}
+
+.carousel-item {
+  width: 200px;
+  height: 600px;
+}
+
+.carousel-item > img {
+  width: 400px;
+  height: 200px;
+}
+
+.carousel-item:not(.slick-center) {
+  z-index: 0;
+  transform: scale(0.8);
+}
+.slick-active.slick-center + .carousel-item + .carousel-item {
+  z-index: 1;
+}
+.slick-active.slick-center + .carousel-item,
+.slick-center + .slick-cloned {
+  z-index: 2;
+}
+.slick-center {
+  z-index: 3;
+}
+.carousel-item {
+  position: relative;
+  transition: transform 80ms;
+}
+.slick-dots {
+  font-size: 2rem;
+}
+
+.slick-dots li button::before {
+  font-size: 2rem;
+}
+
+.title-event {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 2rem;
+  margin: 2%;
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.session2 {
+  background-image: url("../Assets/smoke.JPG");
+  height: 93vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-operators {
+  height: 150vh;
+  margin: -20px 0 -75px 0;
+}
+
+#wamai {
   height: 80vh;
+  margin: 80px 40px -75px 100px;
+}
+.image-container {
+  height: 80vh;
+  margin: 0 14vw;
+  overflow: hidden;
+}
+.image-list {
+  display: flex;
+  flex-direction: row;
+}
+.operator-title {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 2rem;
+  margin: 2%;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.image-title {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
