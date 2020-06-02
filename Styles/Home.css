@@ -261,18 +261,20 @@ nav ul li ul li a:hover {
 
 .image-operators {
   height: 100vh;
-  margin: -65px 0 -80px 0;
+  margin: -135px 0 0 0;
   animation-name: right-character;
+  object-position: 0 100px;
 }
 
 #wamai {
   height: 80vh !important;
-  margin: 70px 40px -75px 70px;
+  margin: 15px 40px 0 70px;
   animation-name: left-character;
   animation-duration: 3s;
+  object-position: 0 100px;
 }
 .image-container {
-  height: 70vh;
+  height: 140vh;
   margin: 0 15vw;
 }
 .image-list {
