@@ -1,0 +1,21 @@
+.map-content {
+  background-color: dimgray;
+  height: 100vh;
+  padding: 5%;
+}
+
+.map-title {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 7vh;
+  font-size: 4rem;
+}
+.map-border {
+  width: 25%;
+  border: 5px solid white;
+  border-radius: 0.4rem;
+  display: block;
+}

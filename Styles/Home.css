@@ -41,11 +41,15 @@ body {
 }
 
 .footer {
-  background-color: rgb(12, 41, 51);
+  background-color: black;
+  color: white;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   height: 8vh;
   width: 100%;
-  position: fixed;
   bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-container {
@@ -84,7 +88,6 @@ body {
 .nav-top {
   background-color: darkslategray;
   display: flex;
-
   justify-content: center;
   align-items: center;
 }
@@ -212,7 +215,7 @@ nav ul li ul li a:hover {
 
 .carousel-item > img {
   width: 400px;
-  height: 200px;
+  height: 300px;
 }
 
 .carousel-item:not(.slick-center) {
@@ -316,4 +319,39 @@ nav ul li ul li a:hover {
   100% {
     margin-left: 100;
   }
+}
+
+.session3 {
+  background-image: url("../Assets/Session3.jpg");
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.latest-news {
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: white;
+  padding: 2% 10%;
+  width: 80%;
+  margin: 5%;
+}
+
+.news-desc {
+  display: flex;
+  align-content: center;
+  margin: 3% 0;
+  font-size: 1.5rem;
+}
+
+.news-title {
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.news-date {
+  margin-right: 20%;
+  margin-left: 5%;
 }
