@@ -252,25 +252,28 @@ nav ul li ul li a:hover {
 
 .session2 {
   background-image: url("../Assets/smoke.JPG");
-  height: 93vh;
+  height: 100vh;
   background-size: cover;
   display: flex;
   flex-direction: column;
+  object-fit: contain;
 }
 
 .image-operators {
   height: 100vh;
-  margin: -40px 0 0 0;
+  margin: -65px 0 -80px 0;
+  animation-name: right-character;
 }
 
 #wamai {
   height: 80vh !important;
   margin: 70px 40px -75px 70px;
+  animation-name: left-character;
+  animation-duration: 3s;
 }
 .image-container {
-  height: 80vh;
+  height: 70vh;
   margin: 0 15vw;
-  overflow: hidden;
 }
 .image-list {
   display: flex;
@@ -293,4 +296,22 @@ nav ul li ul li a:hover {
   align-items: center;
   justify-content: center;
   color: white;
+}
+
+@keyframes left-character {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: 100;
+  }
+}
+
+@keyframes right-character {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: 100;
+  }
 }
