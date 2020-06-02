@@ -1,0 +1,67 @@
+.operator-content {
+  background-color: dimgray;
+  height: 100vh;
+  padding: 5% 2%;
+  height: max-content;
+}
+
+.operator-title {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 7vh;
+  font-size: 4rem;
+  margin-bottom: 15vh;
+}
+
+.image-list {
+  display: flex !important;
+  justify-content: space-between;
+  margin: 0 4%;
+  flex-wrap: wrap;
+}
+
+.image-container {
+  width: 300px;
+  margin: 2%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-container img {
+  filter: grayscale(100%);
+  width: 350px;
+  height: 280px;
+  z-index: 3;
+  margin: 0;
+  position: relative;
+}
+
+.image-container img:hover {
+  filter: grayscale(0%);
+  cursor: pointer;
+}
+
+.image-desc {
+  background-color: black;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  display: flex;
+  border: 2px solid white;
+  justify-content: center;
+  color: white;
+  font-size: 2rem;
+  width: 300px;
+  margin: -70px;
+  padding-top: 40px;
+  z-index: 2;
+}
+
+.modal-quotes {
+  margin: 10%;
+  font-weight: bold;
+}

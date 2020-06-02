@@ -76,10 +76,6 @@ body {
   width: 100%;
 }
 
-.image-nav:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
-}
-
 .content {
   display: flex;
   flex-direction: column;
@@ -93,8 +89,8 @@ body {
 }
 
 .nav-top-img {
-  width: 9%;
-  height: 2%;
+  width: 130px;
+  height: 70px;
 }
 
 .btn {
@@ -110,7 +106,7 @@ body {
   color: yellow;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   border-radius: 0.2rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .preorder:hover {
@@ -165,6 +161,12 @@ nav ul li ul li a {
 
 nav ul li ul li a:hover {
   background: #126d9b;
+  text-decoration: none;
+}
+
+.dropdown-text:hover {
+  text-decoration: none;
+  color: inherit;
 }
 
 .session1 {

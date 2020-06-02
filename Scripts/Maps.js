@@ -1,9 +1,5 @@
 const mapList = [
   {
-    description: "FORTRESS",
-    url: "../Assets/MAPS/Fortress_1.jpg"
-  },
-  {
     description: "KANAL",
     url: "../Assets/MAPS/Kanal_Rework_1.jpg"
   },
@@ -22,6 +18,10 @@ const mapList = [
   {
     description: "FAVELA",
     url: "../Assets/MAPS/Siege_Favela_Thumbnail.png"
+  },
+  {
+    description: "FORTRESS",
+    url: "../Assets/MAPS/Fortress_1.jpg"
   },
   {
     description: "CONSULATE",
