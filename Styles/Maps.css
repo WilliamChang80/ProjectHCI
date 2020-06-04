@@ -49,6 +49,16 @@
   }
 }
 
+@media only screen and (max-width: 800px) {
+  .image-list {
+    display: flex;
+    justify-content: center;
+  }
+  .dropdown-list li {
+    background-color: tomato;
+  }
+}
+
 .image-container img {
   width: 20rem;
   filter: grayscale(100%);

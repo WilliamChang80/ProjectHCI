@@ -78,3 +78,25 @@ input[type="checkbox"] {
   transform: scale(1.5);
   margin-right: 15px;
 }
+@media only screen and (max-width: 800px) {
+  .form-list {
+    margin: 20% !important;
+  }
+  .preorder-content {
+    height: 20%;
+  }
+  .form-container img {
+    display: flex !important;
+    justify-content: center !important;
+    width: 80% !important;
+  }
+  .form-container {
+    padding: 5% 3%;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center !important;
+  }
+  body {
+    overflow-x: hidden;
+  }
+}

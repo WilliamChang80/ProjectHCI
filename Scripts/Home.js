@@ -14,4 +14,3 @@ $("document").ready(function () {
     speed: 500
   });
 });
-console.log($(".carousel").attr("id"));

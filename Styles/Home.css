@@ -106,7 +106,7 @@ body {
   color: yellow;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   border-radius: 0.2rem;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .preorder:hover {
@@ -271,6 +271,18 @@ nav ul li ul li a:hover {
   object-position: 0 100px;
 }
 
+@media only screen and (max-width: 800px) {
+  .image-container {
+    margin: 2% !important;
+  }
+  .preorder {
+    margin: 5%;
+    font-size: 1rem !important;
+  }
+  .navbar {
+    padding: 1% 2%;
+  }
+}
 #wamai {
   height: 80vh !important;
   margin: 15px 40px 0 70px;
