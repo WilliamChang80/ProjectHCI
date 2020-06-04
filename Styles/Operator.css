@@ -88,39 +88,36 @@
 .modal-open {
   overflow: hidden;
 }
+
+body {
+  overflow-x: hidden;
+}
 .modal {
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 1050;
-  display: none;
+  z-index: 3;
   overflow: hidden;
-  -webkit-overflow-scrolling: touch;
   outline: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  animation-name: none;
 }
-.modal.fade .modal-dialog {
-  -webkit-transform: translate(0, -25%);
-  -ms-transform: translate(0, -25%);
-  -o-transform: translate(0, -25%);
-  transform: translate(0, -25%);
-  -webkit-transition: -webkit-transform 0.3s ease-out;
-  -o-transition: -o-transform 0.3s ease-out;
-  transition: -webkit-transform 0.3s ease-out;
-  transition: transform 0.3s ease-out;
-  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out,
-    -o-transform 0.3s ease-out;
+.on {
+  animation-name: modal-on;
+  animation-duration: 2s;
 }
-.modal.in .modal-dialog {
-  -webkit-transform: translate(0, 0);
-  -ms-transform: translate(0, 0);
-  -o-transform: translate(0, 0);
-  transform: translate(0, 0);
-}
-.modal-open .modal {
-  overflow-x: hidden;
-  overflow-y: auto;
+@keyframes modal-on {
+  0% {
+    bottom: 1000px;
+  }
+  100% {
+    bottom: 0px;
+  }
 }
 .modal-dialog {
   position: relative;

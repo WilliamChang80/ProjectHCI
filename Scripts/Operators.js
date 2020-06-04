@@ -85,6 +85,11 @@ Object.keys(operatorList).forEach((key) => {
   );
 });
 
+$(".modal button").click(function () {
+  $(".modal").css("display", "none");
+  $(".modal").toggleClass("on");
+});
+
 $(".image-container").on("click", function (e) {
   const operator = operatorList[e.target.name];
   $(".modal-title").text(e.target.name);
@@ -92,4 +97,6 @@ $(".image-container").on("click", function (e) {
     `${operator.quotes} - ${e.target.name.toLowerCase()}`
   );
   $(".modal-body").text(operator.description);
+  $(".modal").css("display", "flex");
+  $(".modal").addClass("on");
 });
