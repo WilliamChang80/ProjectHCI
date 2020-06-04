@@ -40,6 +40,7 @@
     <div class="preorder-content">
       <div class="form-container">
         <img src="../Assets/Quarantin.jpg" />
+        <form id="form-preorder">
         <div class="form-list">
           <div class="form-group field">
             <label for="name" class="form-label">Name</label>
@@ -49,7 +50,6 @@
               placeholder="Name"
               name="name"
               id="name"
-              required
             />
           </div>
           <div class="form-group field">
@@ -58,9 +58,8 @@
               type="input"
               class="form-field"
               placeholder="Email"
-              name="name"
+              name="email"
               id="email"
-              required
             />
           </div>
           <div class="form-group field">
@@ -71,7 +70,6 @@
               placeholder="Password"
               name="name"
               id="password"
-              required
             />
           </div>
           <div class="form-group field">
@@ -82,7 +80,6 @@
               placeholder="Address"
               name="name"
               id="address"
-              required
             />
           </div>
           <div class="form-group field inline-form">
@@ -92,7 +89,6 @@
               class="form-field"
               name="name"
               id="type"
-              required
             >
               <option value="" disabled selected hidden
                 >Select Your Type</option
@@ -111,17 +107,16 @@
               placeholder="Number of copies"
               name="name"
               id="copies"
-              min="0"
-              required
             />
           </div>
           <div class="form-group field inline-form">
-            <input type="checkbox" />
+            <input type="checkbox" id="checkbox"/>
             <div>I Agree to Terms and Service Aggrement</div>
           </div>
           <input type="submit" value="SUBMIT" />
         </div>
       </div>
+    </form>
     </div>
     <div class="footer">
       <div class="content-footer">
@@ -131,4 +126,5 @@
   </body>
   <script src="../Scripts/jquery-3.5.1.min.js"></script>
   <script src="../Scripts/Navbar.js"></script>
+  <script src="../Scripts/PreOrder.js"></script>
 </html>
