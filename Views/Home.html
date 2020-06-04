@@ -36,29 +36,46 @@
         </div>
       </div>
     </div>
+
     <div class="session1">
-      <div class="container">
-        <div id="prev"><</div>
-        <div class="carousel" id="carousel">
-          <div class="carousel-item"><img src="../Assets/cny.jpg" /></div>
-          <div class="carousel-item">
-            <img src="../Assets/quarantine.JPG" />
-          </div>
-          <div class="carousel-item">
-            <img src="../Assets/halloween.jpg" />
-          </div>
-          <div class="carousel-item">
-            <img src="../Assets/Quarantine.JPG" />
-          </div>
-          <div class="carousel-item">
-            <img src="../Assets/Thanksgiving.jpg" />
-          </div>
-          <div class="carousel-item">
-            <img src="../Assets/Christmas-Events.jpg" />
-          </div>
+      <div class="slideshow-container">
+        <div class="carousel-item">
+          <img src="../Assets/quarantine.JPG" />
+          <div class="text over">Ended</div>
         </div>
-        <div id="next">></div>
+
+        <div class="carousel-item">
+          <img src="../Assets/halloween.jpg" />
+          <div class="text over">Ended</div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="../Assets/Quarantine.JPG" />
+          <div class="text">On Going Until 20 June 2020</div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="../Assets/Thanksgiving.jpg" />
+          <div class="text">On Going Until 25 June 2020</div>
+        </div>
+        <div class="carousel-item">
+          <img src="../Assets/Christmas-Events.jpg" />
+          <div class="text soon">Coming Soon</div>
+        </div>
+
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
       </div>
+      <br />
+
+      <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+      </div>
+
       <div class="title-event">Recent Events</div>
     </div>
     <div class="session2">
