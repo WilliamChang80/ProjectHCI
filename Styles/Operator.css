@@ -13,16 +13,24 @@
   justify-content: center;
   margin-top: 7vh;
   font-size: 4rem;
-  margin-bottom: 15vh;
+  margin-bottom: 10vh;
 }
-
+.image-operator {
+  margin-bottom: 8px !important;
+}
 .image-list {
   display: flex !important;
   justify-content: space-between;
-  margin: 0 4%;
+  margin: 0 1%;
   flex-wrap: wrap;
 }
 
+@media only screen and (max-width: 700px) {
+  .image-list {
+    display: flex !important;
+    justify-content: center !important;
+  }
+}
 .image-container {
   width: 300px;
   margin: 2%;

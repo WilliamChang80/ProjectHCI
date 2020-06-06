@@ -65,6 +65,13 @@ const operatorList = {
     description: `Jalal El Fassi was raised on stories of the Fortress, the legendary training facility in the Atlas Mountains. Its incomparable reputation, along with its famed "Kaids" (Commander) were seared into El Fassi.`,
     quotes: "Lead by example and the mountain will move.",
     url: "kaid.png"
+  },
+  MAESTRO: {
+    description: `Adriano "Maestro" Martello, oldest in a family of eight children, grew up in Rome, but attended the Military Academy of Modena at 18. He joined the Carabinieri and earned a spot as an Explorer Paratrooper in the 1st Paratrooper Regiment known as Tuscania. After several distinguished tours where he earned Silver and Bronze Medals of Military Valor, Martello qualified for Gruppo di Intervento Speciale (Special Intervention Group or G.I.S.) and participated in joint operations in Iraq, earning a facial scar from a roadside IED. He engaged in multiple actions against homegrown threats in Italy and eventually became an instructor helping train Tier 3 units in the Italian military.
+    After Martello’s tour was completed, he went into private consultation where his courses quickly became a top-rated operator bootcamp for teaching advanced techniques to Tier 3 and Tier 2 units, as well as private military companies. The Tuscania eventually convinced Martello to re-enlist to help upgrade one of their units to a Tier 2 Special Forces classification, and this enabled him to join Rainbow as a representative of the Italian Units.`,
+    quotes:
+      "“Did I ever tell you about the time we tree-jumped into a Congo swamp at night? No? Oh, it’s a good one.”",
+    url: "maestro.png"
   }
 };
 
@@ -76,7 +83,7 @@ Object.keys(operatorList).forEach((key) => {
         src="../Assets/Operators/${operator.url}"
         data-toggle="modal"
         data-target="#myModal"
-        id="image-operator"
+        class="image-operator"
         name=${key}
       />
       Open Modal
